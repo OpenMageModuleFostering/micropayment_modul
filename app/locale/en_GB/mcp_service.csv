@@ -1,0 +1,67 @@
+"enabled","Enabled"
+"enabled_description","Enable the micropayment&trade; module"
+
+"account","Account-ID"
+"account_description","Account-ID from micropayment&trade;"
+
+"accesskey","Access-Key"
+"accesskey_description","Access-Key from micropayment&trade;"
+
+"project_name","Project code"
+"project_name_description","Project code from micropayment&trade;"
+
+"pay_text","Payment text"
+"pay_text_description","This option is shown on the invoice and page title of the payment window. With the place holder #ORDER# it is possible to automatically integrate the OrderID in to the invoice or payment window. e.g. ""Order: #ORDER#"" would show ""Order: 0000023"""
+
+"theme","Theme"
+"theme_description","Theme for the payment windows, default is x1"
+
+"gfx","Logo-Code"
+"gfx_description","Please insert your Logo-Code here"
+
+"bggfx","Background image parameter"
+"bggfx_description","Please insert your Background image parameter here."
+
+"bgcolor","Background color"
+"bgcolor_description","Please insert your Background color in HEX here."
+
+"secret_field_name","Security field name"
+"secret_field_name_description","For more security in server-to-server communication, please enter a name only you know."
+
+"secret_field_value","Security field value"
+"secret_field_value_description","Please enter a private security code which should not be passed on to customers. The micropayment&trade; server will process this code with each notification for improved security."
+
+"limit_min","Minimum Amount"
+"limit_min_description","Minimum payment. Has to be entered at micropayment too."
+
+"limit_max","Maximum Amount"
+"limit_max_description","Maximum payment. Has to be entered at micropayment too."
+
+"sort_order","Sort Order"
+"sort_order_description","This value controls the Position at the Payment Page"
+
+"title","Title"
+"title_description","This title is shown at this payment module."
+
+"button_cleanup","Clear old orders"
+"cleanup_days","Deletion of unpaid orders"
+"cleanup_days_description","How many days old can an order be with the status ""pending payment"" before being deleted by the ""clear old orders"" button. Important: Prepayment orders will not be deleted."
+
+
+
+
+"description_prepay","<b>The pre-filled payment form will be sent to you by Email.</b><br />To conclude your order, you will now be forwarded to our payment service provider, micropayment&trade;.<br /><br />&#10004; secure &nbsp; &#10004; simple &nbsp; &#10004; no registration needed"
+"description_debit","<b>Please have your debit card details at hand.</b><br />To conclude your order, you will now be forwarded to our payment service provider, micropayment&trade;.<br /><br />&#10004; secure &nbsp; &#10004; simple &nbsp; &#10004; no registration needed"
+"description_creditcard","<b>Please have your credit card details at hand.</b><br />To conclude your order, you will now be forwarded to our payment service provider, micropayment&trade;.<br /><br />&#10004; secure &nbsp; &#10004; simple &nbsp; &#10004; no registration needed"
+"description_sofort","<b>Please have your online banking details at hand.</b><br />To conclude your order, you will now be forwarded to our payment service provider, micropayment&trade; in cooperation with sofort.de.<br /><br />&#10004; secure &nbsp; &#10004; simple &nbsp; &#10004; no registration needed"
+
+"use_iframe_label","use iframe"
+"use_iframe_description","Payment window iframe integration"
+"use_iframe_description_creditcard","Payment window iframe integration - WARNING: 3D-Secure can cause an interruption of payment. Error-free creditcard payment cannot be guaranteed with iframe integration."
+"use_iframe_description_sofort","for technical reasons not possible for the time.Payment window iframe integration"
+
+"mcpcreditcard_title","micropayment - credit card"
+"mcpdebit_title","micropayment - direct debit"
+"mcpprepay_title","micropayment - prepay"
+"mcpsofort_title","micropayment - direct banking"
+"mcpservice_title","micropayment - gateway"

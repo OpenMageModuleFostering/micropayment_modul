@@ -1,0 +1,96 @@
+body {	
+	margin:0;
+	padding:0;
+	color:#343434;
+    background-color: #e8e8e8;
+}
+img { border:0; }
+.empty {
+	padding:0;
+	margin:0;
+	line-height:2px;
+	font-size:2px;
+}
+div {
+	margin:0;
+	padding:0;
+	font-family: tahoma, verdana, arial, helvetica, sans-serif;
+	font-size:12px;
+	line-height:20px;
+}
+#layout {
+	background-color:#FFFFFF;
+	text-align:left; 
+	position: absolute;
+	left:50%;
+	top:50%;
+    width:840px;  
+	height:520px;
+    border:1px solid #bfbfbf;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-left:-420px;
+	margin-top:-260px;
+}
+.content {
+    width:800px;
+    margin:10px 20px;
+    padding:0;
+}
+.clearfix:after {
+content: ".";
+display: block;
+clear: both;
+visibility: hidden;
+line-height: 0;
+height: 0;
+}
+.clearfix {
+display: inline-block;
+line-height:20px;
+}
+
+html[xmlns] .clearfix {
+display: block;
+}
+
+* html .clearfix {
+height: 1%;
+}
+.fl { float:left}
+.fr { float:right}
+.seconds {text-align:center;width:700px;}
+.title, .titleSub {
+    text-align:right;
+    font-size:13px;
+    color:#343434;
+    text-transform:uppercase;
+}
+.titleSub {font-size:20px;}
+.forwarding {
+    background-color:#b8b8b8;
+    width:100%;
+    height:150px;
+    text-align:center;
+    margin-bottom:20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+h1, h3 {margin:0;padding:0}
+h1  {color:#fff;font-size:30px;padding-top:25px;}
+h3  {color:white;padding-top:15px;}
+.footer {color:#7d7d7d;margin-top: 10px;}
+.dotCa  {
+    background: url(gfx/dotlines-vertical.png) no-repeat;
+    height:139px;
+    margin:0 3px;
+    font-size:2px;
+}
+.lt     {color:#000;font-weight:bold;font-size:11px;}
+.ltl    {color:#7a7a7a;font-size:10px;}
+a.link:link		{text-decoration: underline;color: #cc2b30;font-weight:bold;}
+a.link:active	{text-decoration: underline;color: #cc2b30;font-weight:bold;}
+a.link:visited 	{text-decoration: underline;color: #cc2b30;font-weight:bold;}
+a.link:hover	{text-decoration: none;color: #2f2f2f;font-weight:bold;}

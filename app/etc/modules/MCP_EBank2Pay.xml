@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MCP_EBank2Pay>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <MCP_Service />
+            </depends>
+        </MCP_EBank2Pay>
+    </modules>
+</config>

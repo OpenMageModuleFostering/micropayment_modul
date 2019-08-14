@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MCP_OrderStatus>
+            <active>true</active>
+            <codePool>local</codePool>
+        </MCP_OrderStatus>
+    </modules>
+</config>

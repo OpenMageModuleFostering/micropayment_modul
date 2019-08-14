@@ -1,0 +1,6 @@
+<?php
+?>
+<?php echo $this->htmlEscape($this->getMethod()->getTitle()) ?><br />
+<?php if ($this->getInfo()->getLastTransId() == ''): ?>
+    <em><?php echo Mage::helper('mcpservice')->__('You will be redirected to our secure payment page when you place an order.') ?></em>
+<?php endif; ?>

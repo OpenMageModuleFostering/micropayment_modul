@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MCP_Debit>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <MCP_Service />
+            </depends>
+        </MCP_Debit>
+    </modules>
+</config>

@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<config>
+   <sections>
+        <payment>
+            <groups>
+                <mcporderstatus module="paygate" translate="label">
+                    <label>mcporderstatus_title</label>
+                    <sort_order>691</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <order_status_pending_payment translate="label,comment">
+                            <label>orderstatus_pending_payment_title</label>
+                            <comment>orderstatus_pending_payment_description</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>MCP_OrderStatus_Model_System_Config_Order_Status_Pending</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status_pending_payment>
+                        <order_status_processing translate="label,comment">
+                            <label>orderstatus_processing_title</label>
+                            <comment>orderstatus_processing_description</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>MCP_OrderStatus_Model_System_Config_Order_Status_Processing</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status_processing>
+                        <order_status_cancelled translate="label,comment">
+                            <label>orderstatus_cancelled_title</label>
+                            <comment>orderstatus_cancelled_description</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>MCP_OrderStatus_Model_System_Config_Order_Status_Canceled</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status_cancelled>
+                        <order_status_payment_review translate="label,comment">
+                            <label>orderstatus_payment_review_title</label>
+                            <comment>orderstatus_payment_review_description</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>MCP_OrderStatus_Model_System_Config_Order_Status_Review</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status_payment_review>
+                        <order_status_conflict translate="label,comment">
+                            <label>orderstatus_conflict_title</label>
+                            <comment>orderstatus_conflict_description</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>MCP_OrderStatus_Model_System_Config_Order_Status_Review</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status_conflict>
+                        <order_status_partpay translate="label,comment">
+                            <label>orderstatus_partpay_title</label>
+                            <comment>orderstatus_partpay_description</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>MCP_OrderStatus_Model_System_Config_Order_Status_Pending</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status_partpay>
+                    </fields>
+                </mcporderstatus>
+           </groups>
+        </payment>
+    </sections>
+</config>

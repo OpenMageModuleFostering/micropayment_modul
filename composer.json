@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/micropayment_modul",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "Micropayment GmbH payment gateway integration. Creditcard, Debit, Prepay, SOFORT ",
+    "authors": [
+    {
+        "name": "micropayment gmbh",
+        "email": "meliason@micropayment.de"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

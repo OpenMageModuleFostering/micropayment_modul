@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
+<head>
+    <title>Forwarding</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+    <?php
+    if (!isset($target)) {
+        ?>
+        <meta http-equiv="refresh" content="1; URL=<?php echo $url; ?>"/>
+    <?php } ?>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            color: #343434;
+            background-color: #e8e8e8;
+        }
+
+        img {
+            border: 0;
+        }
+
+        .empty {
+            padding: 0;
+            margin: 0;
+            line-height: 2px;
+            font-size: 2px;
+        }
+
+        div {
+            margin: 0;
+            padding: 0;
+            font-family: tahoma, verdana, arial, helvetica, sans-serif;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        #layout {
+            background-color: #FFFFFF;
+            text-align: left;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 840px;
+            height: 520px;
+            border: 1px solid #bfbfbf;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            margin-left: -420px;
+            margin-top: -260px;
+        }
+
+        .content {
+            width: 800px;
+            margin: 10px 20px;
+            padding: 0;
+        }
+
+        .clearfix:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+
+        .clearfix {
+            display: inline-block;
+            line-height: 20px;
+        }
+
+        html[xmlns] .clearfix {
+            display: block;
+        }
+
+        * html .clearfix {
+            height: 1%;
+        }
+
+        .fl {
+            float: left
+        }
+
+        .fr {
+            float: right
+        }
+
+        .seconds {
+            text-align: center;
+            width: 700px;
+        }
+
+        .title, .titleSub {
+            text-align: right;
+            font-size: 13px;
+            color: #343434;
+            text-transform: uppercase;
+        }
+
+        .titleSub {
+            font-size: 20px;
+        }
+
+        .forwarding {
+            background-color: #b8b8b8;
+            width: 100%;
+            height: 150px;
+            text-align: center;
+            margin-bottom: 20px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        h1, h3 {
+            margin: 0;
+            padding: 0
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 30px;
+            padding-top: 25px;
+        }
+
+        h3 {
+            color: white;
+            padding-top: 15px;
+        }
+
+        .footer {
+            color: #7d7d7d;
+            margin-top: 10px;
+        }
+
+        .dotCa {
+            background: url(<?php echo $media_url; ?>gfx/dotlines-vertical.png) no-repeat;
+            height: 139px;
+            margin: 0 3px;
+            font-size: 2px;
+        }
+
+        .lt {
+            color: #000;
+            font-weight: bold;
+            font-size: 11px;
+        }
+
+        .ltl {
+            color: #7a7a7a;
+            font-size: 10px;
+        }
+
+        a.link:link {
+            text-decoration: underline;
+            color: #cc2b30;
+            font-weight: bold;
+        }
+
+        a.link:active {
+            text-decoration: underline;
+            color: #cc2b30;
+            font-weight: bold;
+        }
+
+        a.link:visited {
+            text-decoration: underline;
+            color: #cc2b30;
+            font-weight: bold;
+        }
+
+        a.link:hover {
+            text-decoration: none;
+            color: #2f2f2f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<?php
+if (isset($target)) {
+    echo "<body onload=\"parent.location.href='" . $url . "';\">";
+} else {
+    echo "<body>";
+}
+
+?>
+<div id="layout">
+    <div class="content">
+        <div class="clearfix" style="width:800px;height:80px;">
+            <?php if (!empty($shop_title)) { ?>
+                <div class="fl" style="width:400px;">
+                    <div class="empty" style="height:27px;">&nbsp;</div>
+                    <div class="title" style="text-align: left;">ein angebot von</div>
+                    <div class="titleSub fl"><?php echo $shop_title; ?></div>
+                </div>
+            <?php } ?>
+            <?php if (!empty($payment_method)) { ?>
+                <?php if (!empty($payment_title)) { ?>
+                    <div class="fr" style="width:400px;">
+                        <div class="empty" style="height:27px;">&nbsp;</div>
+                        <div class="title">Ihre Zahlung per</div>
+                        <div class="titleSub"><?php echo $payment_title; ?></div>
+                    </div>
+                <?php } ?>
+            <?php } ?>
+        </div>
+        <div class="forwarding">
+            <h1>Weiterleitung</h1>
+            <img src="<?php echo $media_url; ?>gfx/ajax-loader.gif" width="31" height="31" style="margin-top:20px;"/>
+
+            <h3>Vorgang wird geladen</h3>
+        </div>
+        <div style="width:800px;height:160px;" align="center">
+            <div style="text-align: center;width:560px;">
+                <div class="fl">
+                    <div style="width:180px;" class="fl">
+                        <a href="http://www.micropayment.de" target="_blank"><img
+                                src="<?php echo $media_url; ?>gfx/logo-micropayment.png" width="158" height="64"
+                                style="margin-top: 30px;"/></a>
+                    </div>
+                    <div style="width:7px;" class="fl">
+                        <div class="dotCa">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="fl">
+                    <div style="width:180px;margin-top:10px;text-align: center;" class="fl">
+                        <div class="lt">PCI DSS zertifiziert</div>
+                        <div class="ltl">by Approved Scanning Vendor</div>
+                        <img src="<?php echo $media_url; ?>gfx/logo-pci.png" width="64" height="65"
+                             style="margin-top: 10px;"/>
+                    </div>
+                    <div style="width:7px;" class="fl">
+                        <div class="dotCa">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="fl">
+                    <div style="width:180px;margin-top:10px;text-align: center;">
+                        <div class="lt">Höchster Schutz</div>
+                        <div class="ltl">für zufriedene Kunden</div>
+                        <img src="<?php echo $media_url; ?>gfx/logo-master-visa.png" width="74" height="65"
+                             style="margin-top: 10px;"/>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div align="center">
+            <div class="seconds">
+                <?php if (!empty($is_backward)) { ?>
+                    Sie werden in Kürze zum Shop weitergeleitet.
+                <?php } else { ?>
+                    Sie werden nun in Kürze auf die Seite unseres Paymentanbieters <b>micropayment™</b> weitergeleitet.
+                    <?php if ($payment_method == 'mcpcreditcard') { ?>Bitte halten Sie Ihre Kreditkarten Daten bereit.<?php } else {
+                        echo '<br />';
+                    } ?>
+                <?php } ?>
+                Sollten Sie nicht weitergeleitet werden, klicken Sie bitte <a href="<?php echo $url; ?>" class="link">hier</a>.
+                <br/>
+
+                <div class="footer">© <?php echo $year; ?> micropayment GmbH - all rights reserved</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

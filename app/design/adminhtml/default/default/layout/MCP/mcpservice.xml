@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="notifications">
+            <block type="mcpservice/adminhtml_notifications" name="mcpservice_notifications" template="MCP/mcpservice/notifications.phtml"/>
+        </reference>
+    </default>
+</layout>

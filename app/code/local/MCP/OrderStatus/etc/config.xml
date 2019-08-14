@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MCP_OrderStatus>
+            <version>2.0.0</version>
+        </MCP_OrderStatus>
+    </modules>
+    <global>
+        <models>
+            <mcporderstatus>
+                <class>MCP_OrderStatus_Model</class>
+            </mcporderstatus>
+        </models>
+    </global>
+    <default>
+        <payment>
+            <mcporderstatus>
+                <order_status_pending_payment>pending_payment</order_status_pending_payment>
+                <order_status_processing>processing</order_status_processing>
+                <order_status_cancelled>canceled</order_status_cancelled>
+                <order_status_payment_review>payment_review</order_status_payment_review>
+                <order_status_conflict>payment_review</order_status_conflict>
+                <order_status_partpay>pending_payment</order_status_partpay>
+            </mcporderstatus>
+        </payment>
+    </default>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <MCP_OrderStatus>
+                    <files>
+                        <default>mcp_orderstatus.csv</default>
+                    </files>
+                </MCP_OrderStatus>
+            </modules>
+        </translate>
+    </adminhtml>
+</config>

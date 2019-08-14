@@ -1,0 +1,22 @@
+"orderstatus_pending_payment_title","Bestellstatus: in bezahlung"
+"orderstatus_pending_payment_description","Kunde ist am bezahlen der Bestellung"
+
+"orderstatus_processing_title","Bestellstatus: bezahlt"
+"orderstatus_processing_description","Kunde hat erfolgreich bezahlt."
+
+"orderstatus_cancelled_title","Bestellstatus: Abgebrochen"
+"orderstatus_cancelled_description","Wenn eine Bestellung storniert oder durch das ""Bestellung aufr&auml;umen"" tool wird, wird dieser Status gesetzt."
+
+"orderstatus_refunded_title","Bestellstatus: Refunded"
+"orderstatus_refunded_description","Wenn ein Refund ausgelöst wird, wird dieser Status gesetzt"
+
+"orderstatus_payment_review_title","Bestellstatus: Bezahlung pr&uuml;fen"
+"orderstatus_payment_review_description","Bei problemen, wird dieser Status gesetzt, damit Sie dies pr&uuml;fen k&ouml;nnen."
+
+"orderstatus_conflict_title","Bestellstatus: Konflikt"
+"orderstatus_conflict_description","Sollte es zu einem abweichendem Event-Workflow kommen, wird dieser Status gesetzt."
+
+"orderstatus_partpay_title","Bestellstatus: Vorkasse - Teilzahlung"
+"orderstatus_partpay_description","Wenn ein Zahlungseingang bei Vorkasse gemeldet wird, die Bestellung aber nicht voll bezahlt ist, wird dieser Status gesetzt."
+
+"mcporderstatus_title","micropayment - order status"

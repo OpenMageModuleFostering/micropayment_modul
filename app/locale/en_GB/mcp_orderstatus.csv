@@ -1,0 +1,22 @@
+"orderstatus_pending_payment_title","Order status: in process"
+"orderstatus_pending_payment_description","Customer is paying the order"
+
+"orderstatus_processing_title","Order status: paid"
+"orderstatus_processing_description","Customer has successfully paid."
+
+"orderstatus_cancelled_title","Order status: Canceled / Error"
+"orderstatus_cancelled_description","If a back posting occurs, this status is set"
+
+"orderstatus_refunded_title","Order status: Refunded"
+"orderstatus_refunded_description","If a refund raised, this status is set."
+
+"orderstatus_payment_review_title","Order status: Payment review"
+"orderstatus_payment_review_description","This status is set if a problem has occurred and the payment needs to be reviewed"
+
+"orderstatus_conflict_title","Order status: conflict"
+"orderstatus_conflict_description","logical payment flow has been interrupted. Please review this order."
+
+"orderstatus_partpay_title","Order status: Prepay - partial payment"
+"orderstatus_partpay_description","this order has a partial payin yet has not been fully paid"
+
+"mcporderstatus_title","micropayment - order status"
